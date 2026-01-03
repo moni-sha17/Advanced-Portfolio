@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <header class="header">
+        <nav class="header__nav">
+            <h1 class="header__title">Personal Portfolio</h1>
+            <a class="header__nav-link" href="#about">About</a>
+            <a class="header__nav-link" href="#skills">Skills</a>
+            <a class="header__nav-link" href="#projects">Projects</a>
+            <a class="header__nav-link" href="#contact">Contact</a>
+            <button id="theme-toggle" class="header__theme-toggle" aria-label="Toggle theme">🌙</button>
+        </nav>
+    </header>
+
+    <main class="main-grid">
+        <section id="about" class="section">
+            <h2 class="section__title">About Me</h2>
+            <img src="https://tse4.mm.bing.net/th/id/OIP.A1CwO5Q3kquQPVeE9y4WWgHaJ9?pid=Api&P=0&h=180" alt="Portrait" class="section__image">
+            <p class="section__text">BCA student from Haryana, India. Passionate about frontend development, learning HTML/CSS/JS. Preparing for MCA (TANCET) and tech internships at Deloitte, Entrust, Sutherland.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section__title">My Skills</h2>
+            <ul class="skills__list">
+                <li class="skills__item">HTML5</li>
+                <li class="skills__item">CSS3</li>
+                <li class="skills__item">JavaScript</li>
+                <li class="skills__item">Responsive Design</li>
+                <li class="skills__item">Figma/UI-UX</li>
+                <li class="skills__item">Git/GitHub</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section__title">My Projects</h2>
+            <div class="projects__grid">
+                <article class="project-card">
+                    <h3 class="project-card__title">Interactive To Do List</h3>
+                    <p>Full-featured task manager with add/delete, localStorage persistence, and drag-drop functionality.</p>
+                    <span class="project-card__tech">HTML • CSS • JavaScript</span>
+                </article>
+                <article class="project-card">
+                    <h3 class="project-card__title">Advanced Portfolio</h3>
+                    <p>This site! CSS Grid, BEM, animations, theme switcher, responsive design.</p>
+                    <span class="project-card__tech">Advanced CSS3 • Vanilla JS</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section__title">Contact Me</h2>
+            <form class="contact__form" id="contact-form">
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name:</label>
+                    <input class="form-input" type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-input" type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="message">Message:</label>
+                    <textarea class="form-textarea" id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <div id="form-message" class="form-message" aria-live="polite"></div>
+                <button class="form-submit" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© <span id="year"></span> All rights reserved | Nārnaund, Haryana, India</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
